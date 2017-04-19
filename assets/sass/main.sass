@@ -1,0 +1,341 @@
+@import "bourbon/bourbon"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700')
+$blue: #094c80
+
+@mixin ts($a)
+	+transition(all $a ease)
+
+.my-bg
+	background-color: $blue
+
+.my-color
+	color: $blue
+
+.row
+	margin-bottom: 0		
+
+body
+	overflow-x: hidden
+	min-height: 100vh
+	font-family: 'Open Sans', sans-serif
+
+.navbar-fixed
+	nav
+		background-color: transparent
+		+ts(1s)
+
+		&.fixed
+			background-color: $blue
+			+ts(1s)	
+
+.diff-header
+	.akt-nav
+		.button-collapse i
+			font-size: 2.2rem
+
+	.side-nav
+		padding-top: 20px
+
+		li 
+			border-bottom: 1px dotted #ccc	
+			padding: 3px 0		
+
+.akt-header
+	position: relative
+	height: 630px
+	width: 100%	
+	margin-bottom: 60px
+
+	.akt-nav
+		top: 20px
+		+ts(0.5s)
+
+		&.fixed
+			top: 0px
+			+ts(0.5s)
+
+		ul a
+			letter-spacing: 0.5px	
+			text-transform: uppercase
+			font-weight: 600
+
+		.button-collapse i
+			font-size: 2.4rem	
+
+	.side-nav
+		padding-top: 25px
+
+		li
+			border-bottom: 1px solid #ddd
+			padding: 5px 0		
+
+	.header-content
+		margin-top: 12%
+
+		h3
+			font-weight: 600
+			font-size: 2.6rem		
+			text-transform: capitalize
+
+		.btn
+			border-radius: 0
+
+			&:hover, &:active, &:focus
+				background-color: $blue	
+
+
+.in-about
+	margin-bottom: 60px
+
+	h3
+		font-weight: 700	
+		color: #444
+		margin: 0 0 40px 0
+
+	p
+		text-align: justify	
+
+
+.home-cards, .akt-gallery, .akt-team, .akt-contact
+	margin-bottom: 60px
+
+	h3
+		font-weight: 700
+		color: #444
+		margin: 0 0 40px 0
+
+	.card
+		.card-title
+			font-weight: 600
+
+		p
+			height: 66px
+
+		.card-content
+			padding: 20px	
+
+		.card-action
+			padding: 0
+
+			a
+				display: block	
+				width: 100%
+				padding: 15px		
+				font-weight: 600			
+
+
+.akt-footer
+	min-height: 280px
+	position: relative
+	padding-top: 10px
+
+	.flex-row
+		margin-left: -0.75rem
+		margin-right: -0.75rem
+		+display(flex)
+		+justify-content(space-between)
+		+flex-wrap(wrap)
+
+	.f-c
+		h5
+			color: #fff
+			font-size: 1.2rem
+			font-weight: 600
+
+		ul
+			padding: 0 0 0 5px
+			margin: 25px 0
+
+			li
+				margin: 10px 0
+
+				a
+					color: rgba(255,255,255,0.8)	
+					+ts(0.2s)
+
+					&:hover
+						color: #fff
+						+ts(0.1s)
+
+	.footer-copyright
+		position: absolute
+		width: 100%
+		bottom: 0
+
+		.row span
+			display: inline-block
+
+			&.cp-text
+				color: #ccc
+				font-size: 14px
+				line-height: 55px
+
+				span
+					font-size: 15px
+
+			&.footer-social
+				ul li
+					display: inline-block		
+					height: 26px
+					width: 26px
+					border-radius: 50%
+					background-color: #005be8	
+					line-height: 26px	
+					margin: 0 1px
+
+					a
+						display: inline-block
+						width: inherit
+						height: inherit
+						border-radius: inherit
+
+
+.diff-header
+	min-height: 300px
+	margin-bottom: 60px	
+
+	.diff-header-content
+		margin-top: 60px
+		margin-left: 1rem		
+
+.event-cards
+	margin-bottom: 20px
+
+	.card
+		margin-bottom: 40px
+
+
+.pagination
+	margin-bottom: 60px
+
+	li.active
+		background-color: $blue			
+
+
+.akt-gallery
+	.collapsible
+		li
+			.collapsible-header
+				font-weight: 600
+
+			.collapsible-body
+				a
+					display: inline-block
+					margin: 2px
+
+					img
+						display: inline-block
+						max-height: 120px	
+
+					&:hover, &:active, &:focus
+						border: none
+						outline: none	
+
+
+.akt-team
+	.mem-block
+		position: relative
+		margin-bottom: 40px
+		display: inline-block
+		box-shadow: none
+		top: 0
+		+ts(0.2s)
+
+		&:hover
+			box-shadow: 0px 2px 4px 1px rgba(50, 50, 50, 0.50)
+			top: -4px
+			+ts(0.2s)
+
+		.img-mem
+
+		.desc-mem
+			padding: 10px
+
+			span
+				display: block
+
+				&:first-child
+					font-weight: 600
+
+				&:nth-child(2)
+					color: #aaa	
+					
+
+
+.akt-contact
+	margin-bottom: 0
+
+	.c-info
+		h5
+			font-size: 1.4rem
+			font-weight: 600
+
+		span
+			display: block
+			padding-left: 6px
+
+			h6
+				display: inline-block			
+				font-weight: 600
+				color: #444
+
+	.c-form
+		margin-bottom: 60px
+
+		.con-form
+			.input-field
+				input:focus + label, textarea:focus + label, .prefix.active
+					color: $blue!important
+
+				input:focus, textarea:focus
+					border-bottom: 1px solid $blue
+					box-shadow: 0 1px 0 0 $blue	
+
+				.c-f-btn
+					border: none
+					outline: none
+					padding: 8px 20px
+
+					i
+						margin-left: 4px
+
+					&:hover, &:focus, &:active
+						background-color: $blue	
+
+
+	.c-map
+		min-height: 350px																									
+
+.akt-article
+	margin-bottom: 60px
+
+	h4
+		font-weight: 700
+		color: #444
+		margin: 0 0 40px 0
+
+	.content-article
+		margin-bottom: 30px
+
+		h5
+			font-weight: 600
+			font-size: 1.3rem	
+
+			&:not(:first-child)
+				margin-top: 30px
+
+		p
+			text-align: justify
+
+		img
+			display: inline-block
+
+			&.right
+				margin-left: 20px
+				margin-top: 15px
+
+			&.left
+				margin-right: 20px
+				margin-top: 15px	
+
+

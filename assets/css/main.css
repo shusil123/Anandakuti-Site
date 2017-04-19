@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.my-bg {
+  background-color: #094c80; }
+
+.my-color {
+  color: #094c80; }
+
+.row {
+  margin-bottom: 0; }
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif; }
+
+.navbar-fixed nav {
+  background-color: transparent;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
+  .navbar-fixed nav.fixed {
+    background-color: #094c80;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease; }
+
+.diff-header .akt-nav .button-collapse i {
+  font-size: 2.2rem; }
+.diff-header .side-nav {
+  padding-top: 20px; }
+  .diff-header .side-nav li {
+    border-bottom: 1px dotted #ccc;
+    padding: 3px 0; }
+
+.akt-header {
+  position: relative;
+  height: 630px;
+  width: 100%;
+  margin-bottom: 60px; }
+  .akt-header .akt-nav {
+    top: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .akt-header .akt-nav.fixed {
+      top: 0px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .akt-header .akt-nav ul a {
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .akt-header .akt-nav .button-collapse i {
+      font-size: 2.4rem; }
+  .akt-header .side-nav {
+    padding-top: 25px; }
+    .akt-header .side-nav li {
+      border-bottom: 1px solid #ddd;
+      padding: 5px 0; }
+  .akt-header .header-content {
+    margin-top: 12%; }
+    .akt-header .header-content h3 {
+      font-weight: 600;
+      font-size: 2.6rem;
+      text-transform: capitalize; }
+    .akt-header .header-content .btn {
+      border-radius: 0; }
+      .akt-header .header-content .btn:hover, .akt-header .header-content .btn:active, .akt-header .header-content .btn:focus {
+        background-color: #094c80; }
+
+.in-about {
+  margin-bottom: 60px; }
+  .in-about h3 {
+    font-weight: 700;
+    color: #444;
+    margin: 0 0 40px 0; }
+  .in-about p {
+    text-align: justify; }
+
+.home-cards, .akt-gallery, .akt-team, .akt-contact {
+  margin-bottom: 60px; }
+  .home-cards h3, .akt-gallery h3, .akt-team h3, .akt-contact h3 {
+    font-weight: 700;
+    color: #444;
+    margin: 0 0 40px 0; }
+  .home-cards .card .card-title, .akt-gallery .card .card-title, .akt-team .card .card-title, .akt-contact .card .card-title {
+    font-weight: 600; }
+  .home-cards .card p, .akt-gallery .card p, .akt-team .card p, .akt-contact .card p {
+    height: 66px; }
+  .home-cards .card .card-content, .akt-gallery .card .card-content, .akt-team .card .card-content, .akt-contact .card .card-content {
+    padding: 20px; }
+  .home-cards .card .card-action, .akt-gallery .card .card-action, .akt-team .card .card-action, .akt-contact .card .card-action {
+    padding: 0; }
+    .home-cards .card .card-action a, .akt-gallery .card .card-action a, .akt-team .card .card-action a, .akt-contact .card .card-action a {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-weight: 600; }
+
+.akt-footer {
+  min-height: 280px;
+  position: relative;
+  padding-top: 10px; }
+  .akt-footer .flex-row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .akt-footer .f-c h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600; }
+  .akt-footer .f-c ul {
+    padding: 0 0 0 5px;
+    margin: 25px 0; }
+    .akt-footer .f-c ul li {
+      margin: 10px 0; }
+      .akt-footer .f-c ul li a {
+        color: rgba(255, 255, 255, 0.8);
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        .akt-footer .f-c ul li a:hover {
+          color: #fff;
+          -webkit-transition: all 0.1s ease;
+          -moz-transition: all 0.1s ease;
+          transition: all 0.1s ease; }
+  .akt-footer .footer-copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+    .akt-footer .footer-copyright .row span {
+      display: inline-block; }
+      .akt-footer .footer-copyright .row span.cp-text {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 55px; }
+        .akt-footer .footer-copyright .row span.cp-text span {
+          font-size: 15px; }
+      .akt-footer .footer-copyright .row span.footer-social ul li {
+        display: inline-block;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background-color: #005be8;
+        line-height: 26px;
+        margin: 0 1px; }
+        .akt-footer .footer-copyright .row span.footer-social ul li a {
+          display: inline-block;
+          width: inherit;
+          height: inherit;
+          border-radius: inherit; }
+
+.diff-header {
+  min-height: 300px;
+  margin-bottom: 60px; }
+  .diff-header .diff-header-content {
+    margin-top: 60px;
+    margin-left: 1rem; }
+
+.event-cards {
+  margin-bottom: 20px; }
+  .event-cards .card {
+    margin-bottom: 40px; }
+
+.pagination {
+  margin-bottom: 60px; }
+  .pagination li.active {
+    background-color: #094c80; }
+
+.akt-gallery .collapsible li .collapsible-header {
+  font-weight: 600; }
+.akt-gallery .collapsible li .collapsible-body a {
+  display: inline-block;
+  margin: 2px; }
+  .akt-gallery .collapsible li .collapsible-body a img {
+    display: inline-block;
+    max-height: 120px; }
+  .akt-gallery .collapsible li .collapsible-body a:hover, .akt-gallery .collapsible li .collapsible-body a:active, .akt-gallery .collapsible li .collapsible-body a:focus {
+    border: none;
+    outline: none; }
+
+.akt-team .mem-block {
+  position: relative;
+  margin-bottom: 40px;
+  display: inline-block;
+  box-shadow: none;
+  top: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .akt-team .mem-block:hover {
+    box-shadow: 0px 2px 4px 1px rgba(50, 50, 50, 0.5);
+    top: -4px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .akt-team .mem-block .desc-mem {
+    padding: 10px; }
+    .akt-team .mem-block .desc-mem span {
+      display: block; }
+      .akt-team .mem-block .desc-mem span:first-child {
+        font-weight: 600; }
+      .akt-team .mem-block .desc-mem span:nth-child(2) {
+        color: #aaa; }
+
+.akt-contact {
+  margin-bottom: 0; }
+  .akt-contact .c-info h5 {
+    font-size: 1.4rem;
+    font-weight: 600; }
+  .akt-contact .c-info span {
+    display: block;
+    padding-left: 6px; }
+    .akt-contact .c-info span h6 {
+      display: inline-block;
+      font-weight: 600;
+      color: #444; }
+  .akt-contact .c-form {
+    margin-bottom: 60px; }
+    .akt-contact .c-form .con-form .input-field input:focus + label, .akt-contact .c-form .con-form .input-field textarea:focus + label, .akt-contact .c-form .con-form .input-field .prefix.active {
+      color: #094c80 !important; }
+    .akt-contact .c-form .con-form .input-field input:focus, .akt-contact .c-form .con-form .input-field textarea:focus {
+      border-bottom: 1px solid #094c80;
+      box-shadow: 0 1px 0 0 #094c80; }
+    .akt-contact .c-form .con-form .input-field .c-f-btn {
+      border: none;
+      outline: none;
+      padding: 8px 20px; }
+      .akt-contact .c-form .con-form .input-field .c-f-btn i {
+        margin-left: 4px; }
+      .akt-contact .c-form .con-form .input-field .c-f-btn:hover, .akt-contact .c-form .con-form .input-field .c-f-btn:focus, .akt-contact .c-form .con-form .input-field .c-f-btn:active {
+        background-color: #094c80; }
+  .akt-contact .c-map {
+    min-height: 350px; }
+
+.akt-article {
+  margin-bottom: 60px; }
+  .akt-article h4 {
+    font-weight: 700;
+    color: #444;
+    margin: 0 0 40px 0; }
+  .akt-article .content-article {
+    margin-bottom: 30px; }
+    .akt-article .content-article h5 {
+      font-weight: 600;
+      font-size: 1.3rem; }
+      .akt-article .content-article h5:not(:first-child) {
+        margin-top: 30px; }
+    .akt-article .content-article p {
+      text-align: justify; }
+    .akt-article .content-article img {
+      display: inline-block; }
+      .akt-article .content-article img.right {
+        margin-left: 20px;
+        margin-top: 15px; }
+      .akt-article .content-article img.left {
+        margin-right: 20px;
+        margin-top: 15px; }
+
+/*# sourceMappingURL=main.css.map */
